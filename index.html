@@ -3,6 +3,8 @@
 <title>BRF Grankotten 2 i Majorna</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="Majorna, bostadsrätt, gråberget, Grankotten 2, såggatan, toppsegelsgatan">
+  <meta name="description" content="Hemsida för BRF Grankotten 2 i Majorna">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -15,8 +17,48 @@
   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
 <style>
+
+
+
+
+.faq {
+  text-align: center;
+  margin: 11% 0;
+}
+
+.faq a {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: white;
+/*   text-shadow: 1px 1px #FFF; */
+  text-decoration: none;
+}
+
+.bounce {
+  -moz-animation: bounce 1s infinite;
+  -webkit-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-2px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+}
+
   body,
   h1,
   h2 {
@@ -37,7 +79,6 @@
     min-height: 100%;
     background-position: center;
     background-size: cover;
-
   }
 
 
@@ -49,14 +90,43 @@
   .bgimg2 {
     background-image: url("./img/ute-min.jpeg");
   }
+
+  .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* .swiper-container {
+  max-width: 600px;
+  height: 300px;
+ 
+}
+.swiper-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+ 
+} */
 </style>
 
 <body>
   <!-- Header / Home-->
   <header class="w3-display-container bgimg w3-grayscale-min" id="home">
-    <div class="w3-display-middle w3-text-white w3-center ">
-      <h1 class="w3-jumbo font-shadow">BRF Grankotten 2</h1>
+    <div class="w3-display-middle w3-text-black w3-center">
+      <h1 class="w3-jumb font-shadow">BRF Grankotten 2</h1>
       <h2 class="font-shadow">På Toppsegelsgatan i Majorna</h2>
+          <div class="faq w3-jumbo bounce">
+            <a href="faq.html">Klicka här för Stadgar</a>
+          </div>
+          <p class="w3-text-white font-shadow faq w3-large">eller scrolla nedåt för information om föreningen</p>
     </div>
   </header>
 
@@ -74,7 +144,7 @@
 
       <a href="#bilder" style="width:20%" class="w3-bar-item w3-button">Bilder</a>
 
-      <a href="#boende" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Boende-sidan</a>
+      <a href="https://www.facebook.com/groups/grankotten2" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Facebook-gruppen</a>
 
       <a href="#kontakt" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Kontakt</a>
     </div>
@@ -131,7 +201,25 @@
     <div class="w3-content">
       <h1 class="w3-text-grey"><b>Bilder</b></h1>
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+
+
+<div class="row">
+  <div class="column">
+    <img src="./img/DSC_0295.jpg" alt="En innergård, gräs och träd" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./img/ute-min.jpeg" alt="två vinglas på en bakgård" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./img/DSC_0367.jpg" alt="Kortsidan på huset, en björk och himmel"style="width:100%">
+  </div>
+</div>
+
+
+
+
+      <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -159,18 +247,11 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
+      </div>  -->
     </div>
   </div>
 
 
-  <div class="w3-container w3-padding-64  w3-center w3-grayscale-min" id="boende">
-    <h1>Boende-sidan</h1>
-    <p>Här kommer det snart finnas en anslagstavla/klotterplank för oss som bor i
-      Grankotten nr.2, <br> men tills dess sköter vi snacket på vår
-      <a href="https://www.facebook.com/groups/grankotten2">facebook-sida</a>
-    </p>
-  </div>
   <!-- RSVP section -->
   <div class="w3-container w3-padding-64 w3-sand w3-center w3-wide" id="kontakt">
 
@@ -194,6 +275,30 @@
       </p>
     </footer>
     <div class="w3-hide-small" style="margin-bottom:32px"></div>
+
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+          // Optional parameters
+          direction: 'vertical',
+          loop: true,
+
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
+    </script>
 </body>
 
 </html>
