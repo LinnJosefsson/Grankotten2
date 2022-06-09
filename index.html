@@ -111,13 +111,28 @@
   left:42%;
 }
 
-.demos {
-  text-align: center;
-  margin-top: 20px;
-  width: 80%;
-  margin: auto;}
+.click-zoom input[type=checkbox] {
+  display: none
+}
 
-.demo-image {
+.click-zoom img {
+  width: 280px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(2);
+  cursor: zoom-out
+}
+
+@media screen and (min-width: 600px) {
+  .click-zoom img {
+    width: 500px;
+  }
+}
+
+/* .demo-image {
   cursor: url("http://tholman.com/intense-images/img/plus_cursor.png") 25 25, auto;
   display: inline-block;
   width: 200px;
@@ -135,7 +150,7 @@
     background-image: url("./img/ute-min.jpeg"); }
      .demo-image.third {
     background-position: 30% 5%;
-    background-image: url("./img/DSC_0367.jpg"); }
+    background-image: url("./img/DSC_0367.jpg"); } */
 
     .w3-jumb {
       font-size: 60px;
@@ -204,7 +219,7 @@
           eller kväll. Vyn från andra sidan huset är det inget fel på heller,
           Masthuggskyrkans siluett är fantastisk, såväl i morgonsol som upplyst i
           mörker.
-
+<br><br>
 
           Vi håller vår fastighet i gott skick med hjälp av regelbundna besiktningar och
           åtgärder enligt vår långsiktiga underhållsplan. Vår strävan från styrelsen är att
@@ -212,14 +227,51 @@
           hjälpa till efter var och ens förmåga. Kom gärna med förslag till förbättringar!
           För att stärka gemenskapen i huset anordnas aktiviteter, som grillning och
           gemensamma städdagar. Vi hoppas det leder till att vi lär känna varandra bättre
-          och att det blir ännu trivsammare att bo här.</p>
+          och att det blir ännu trivsammare att bo här!</p>
       
       <br />
     </div>
   </div>
 
+  <div class="w3-container w3-padding-64 w3-sand w3-center w3-grayscale-min" id="bilder">
+    <div class="w3-content">
+      <h1 class="w3-text-grey"><b>Bilder</b></h1>
+  
+        
 
-  <div class="w3-container w3-padding-64 w3-sand" id="nyheter">
+        <div class="click-zoom">
+          <label>
+            <input type="checkbox">
+          <img src="./img/DSC_0295.jpg" alt="två vinglas på en bakgård">
+          </label>
+            </div>
+        <div class="click-zoom">
+          <label>
+            <input type="checkbox">
+          <img src="./img/ute-min.jpeg" alt="två vinglas på en bakgård">
+        </div>
+        </label>
+
+        <div class="click-zoom">
+          <label>
+            <input type="checkbox">
+           <img src="./img/DSC_0367.jpg" alt="Kortsidan på huset, en björk och himmel">
+          </label>
+        </div>
+
+                <div class="click-zoom">
+                  <label>
+                    <input type="checkbox">
+                    <img src="./img/ute2-min.jpeg" alt="Kortsidan på huset, en björk och himmel">
+                  </label>
+                </div>
+    </div>
+  </div>
+  
+  
+
+
+  <div class="w3-container w3-padding-64 w3-pale-red" id="nyheter">
     <div class="w3-content">
       <h1 class="w3-center w3-text-grey">
         <b>Nyheter</b>
@@ -236,18 +288,7 @@
 
 
 
-  <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-grayscale-min" id="bilder">
-    <div class="w3-content">
-      <h1 class="w3-text-grey"><b>Bilder</b></h1>
-
-
-      <section class="demos">
-        <!-- Using divs for the demo, for formatting... you can use images if you want!  -->
-        <div class="demo-image first" img src="./img/DSC_0295.jpg" alt="två vinglas på en bakgård" style="width:100%"></div>
-        <div class="demo-image second" img src="./img/ute-min.jpeg" alt="två vinglas på en bakgård" style="width:100%"></div>
-          <div class="demo-image third" img src="./img/DSC_0367.jpg" alt="Kortsidan på huset, en björk och himmel" style="width:100%">
-          </div>
-      </section>
+ 
 
 
 
@@ -280,27 +321,7 @@
     <div class="w3-hide-small" style="margin-bottom:32px"></div>
 
     <script>
-      const swiper = new Swiper('.swiper-container', {
-          // Optional parameters
-          direction: 'vertical',
-          loop: true,
 
-          // If we need pagination
-          pagination: {
-            el: '.swiper-pagination',
-          },
-
-          // Navigation arrows
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-
-          // And if we need scrollbar
-          scrollbar: {
-            el: '.swiper-scrollbar',
-          },
-        });
     </script>
 </body>
 
