@@ -17,13 +17,16 @@
   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="style.css" />
 <style>
+
+  html {
+  scroll-behavior: smooth;
+}
 
 body {
   width:100%;
@@ -180,13 +183,23 @@ body {
 nav a {
   color:white;
 }
+
+.footer {
+  bottom: 0px;
+}
+
+.first-letter {
+  font-size: 20px;
+  line-height: 0px;
+}
+
 </style>
 
 <body>
   <!-- Header / Home-->
   <header class="w3-display-container bgimg w3-grayscale-min" id="home">
     <nav class="navbar navbar-light bg-dark justify-content-between">
-      <a href="faq.html">Klicka här för <u>Stadgarna</u></a>
+      <a href="faq.html"><u>Här</u> hittar du Stadgarna</a>
     </nav>
     <div class="w3-display-middle w3-text-white w3-center">
       <h1 class="w3-jumb font-shadow">BRF Grankotten 2</h1>
@@ -206,22 +219,21 @@ nav a {
   <!-- Navbar (sticky bottom) -->
   <div class="w3-bottom w3-hide-small">
     <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-      <a href="#welcome" style="width:20%" class="w3-bar-item w3-button">Välkommen!</a>
-      <a href="#nyheter" style="width:20%" class="w3-bar-item w3-button">Nyheter</a>
+      <a href="#welcome" style="width:25%" class="w3-bar-item w3-button">Om föreningen</a>
 
-      <a href="#bilder" style="width:20%" class="w3-bar-item w3-button">Bilder</a>
+      <a href="#bilder" style="width:25%" class="w3-bar-item w3-button">Bilder</a>
 
-      <a href="https://www.facebook.com/groups/grankotten2" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Facebook-gruppen</a>
+      <a href="https://www.facebook.com/groups/grankotten2" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Facebook-gruppen</a>
 
-      <a href="#kontakt" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Kontakt</a>
+      <a href="#kontakt" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Kontakt</a>
     </div>
+    
   </div>
 
-
-  <div class="w3-container w3-center w3-padding-16 w3-pale-red w3-grayscale-min" id="welcome">
+  <div class="w3-container w3-center w3-padding-48 w3-pale-red w3-grayscale-min" id="welcome">
     <div class="w3-content">
       <p>
-        Vår lilla förening ligger trevligt belägen i Gråbergets skugga i en lugn
+        <span class="first-letter">V</span>år lilla förening ligger trevligt belägen i Gråbergets skugga i en lugn
           omgivning, på lagom promenadavstånd från affärer och restauranger. Baksidan
           vetter mot en lummig sluttning bortom gräsmatta som vår trogne klippare
           Glenn håller i fint skick. Med lite tur kan man se rådjur betande på morgon
@@ -250,7 +262,7 @@ nav a {
         <div class="click-zoom">
           <label>
             <input type="checkbox">
-          <img src="./img/DSC_0295.jpg" alt="två vinglas på en bakgård">
+          <img src="./img/DSC_0295.jpg" alt="bakgård med mycket natur">
           </label>
             </div>
         <div class="click-zoom">
@@ -275,40 +287,9 @@ nav a {
                 </div>
     </div>
   </div>
-  
-  
 
-
-  <div class="w3-container w3-center w3-padding-16 w3-pale-red" id="nyheter">
-    <div class="w3-content">
-      <h1 class="w3-center w3-text-grey">
-        <b>Nyheter</b>
-      </h1>
-      <img class="w3-round" src="./img/hangmattan-min.jpg" style="width:100%" />
-      <p>
-        <i>Här kan du snart läsa nyheter rörade Grankotten nr 2!</i>
-      </p>
-      <br />
-    </div>
-  </div>
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-  <!-- RSVP section -->
-  <div class="w3-container w3-padding-16 w3-sand w3-center w3-wide" id="kontakt">
-
-    <!--fixa server-->
+  <div class="w3-container w3-padding-48 w3-sand w3-center w3-wide" id="kontakt">
+<hr>
     <h1 class="w3-large"><u>Kontakt</u></h1>
     <p class="w3-medium">Frågor eller funderingar? Kontakta oss!</p>
  <a href="mailto:grankotten2@gmail.com"
