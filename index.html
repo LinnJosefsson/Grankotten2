@@ -193,15 +193,27 @@ nav a {
   line-height: 0px;
 }
 
+.blink_me {
+  animation: blinker 2s linear infinite;
+  animation-iteration-count: 1;
+}
+
+@keyframes blinker {
+  50% {
+    color:pink;
+  }
+}
 
 </style>
 
 <body>
   <!-- Header / Home-->
   <header class="w3-display-container bgimg w3-grayscale-min" id="home">
-    <nav class="navbar navbar-light bg-dark justify-content-between">
-      <a href="faq.html"><u>Här</u> hittar du Stadgarna</a>
+    <nav class="navbar navbar-light w3-opacity-min w3-white justify-content-between">
+      <a href="stadgar.html" class="w3-bar-item w3-button blink_me"><u>Information till boende</u></a>
     </nav>
+
+
     <div class="w3-display-middle w3-text-white w3-center">
       <h1 class="w3-jumb font-shadow">BRF Grankotten 2</h1>
       <h2 class="font-shadow">Toppsegelsgatan i Majorna</h2>
