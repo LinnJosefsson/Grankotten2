@@ -1,0 +1,16 @@
+
+ RewriteEngine on
+    #1) redirect index.html to 
+    RewriteCond %{THE_REQUEST} /([^.]+).html [NC]
+    RewriteRule .+ /%1 [L,R=301]
+    #2) rewrite / to index.html
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule (.*)/?$ /$1.html [L]
+
+ RewriteEngine on
+    #1) redirect stadgar.html to stadgar
+    RewriteCond %{THE_REQUEST} /([^.]+).html [NC]
+    RewriteRule .+ /%1 [L,R=301]
+    #2) rewrite /stadgar to stadgar.html
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule (.*)/?$ /$1.html [L]
