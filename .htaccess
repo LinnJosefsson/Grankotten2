@@ -1,6 +1,6 @@
 
  RewriteEngine on
-    #1) redirect index.html to 
+    #1) redirect index.html to index
     RewriteCond %{THE_REQUEST} /([^.]+).html [NC]
     RewriteRule .+ /%1 [L,R=301]
     #2) rewrite / to index.html
